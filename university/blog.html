@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Author" content="Daniel Nicholas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-Eduford</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- header -->
+    <section class="sub_header">
+        <nav>
+            <a href="index.html"><img src="./images/logo.png"></a>
+            <div class="nav_links" id="nav_link">
+                <i class="fa fa-times" onclick="hide_menu()"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./course.html">COURSE</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="show_menu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+    <!-- blog page content -->
+    <section class="blog_content">
+        <div class="row">
+            <div class="blog_left">
+                <img src="./images/certificate.jpg">
+                <h2>Our Certificate & Online Programs For 2021</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Velit qui numquam illum ab aliquid tenetur nam distinctio odit eum ipsum! 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit in dignissimos ea. 
+                    Inventore iure blanditiis dolorem nostrum consequatur animi culpa?</p><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Velit qui numquam illum ab aliquid tenetur nam distinctio odit eum ipsum! 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit in dignissimos ea. 
+                    Inventore iure blanditiis dolorem nostrum consequatur animi culpa?</p><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Velit qui numquam illum ab aliquid tenetur nam distinctio odit eum ipsum! 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit in dignissimos ea. 
+                    Inventore iure blanditiis dolorem nostrum consequatur animi culpa?</p><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Velit qui numquam illum ab aliquid tenetur nam distinctio odit eum ipsum! 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit in dignissimos ea. 
+                    Inventore iure blanditiis dolorem nostrum consequatur animi culpa?</p>
+
+                    <div class="comment_box">
+                        <h3>Leave A Comment</h3>
+                        <form class="form_comment">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Your comment"></textarea>
+                            <button type="submit" class="nice_btn red_btn" >POST COMMENT</button>
+                        </form>
+                    </div>
+
+
+            </div>
+            <div class="blog_right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>46</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>50</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>20</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>20</span>
+                </div>
+                <div>
+                    <span>Geography</span>
+                    <span>60</span>
+                </div>
+                <div>
+                    <span>Literature</span>
+                    <span>25</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+<!-- footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam et soluta dolores saepe reiciendis sunt,
+        aperiam blanditiis, voluptatum tenetur<br> necessitatibus consectetur in, doloremque excepturi exercitationem?</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/daniel.nicholas_" target="_blank" class="fa fa-instagram"></a>
+            <a href="tel:08174544699" target="_blank" class="fa fa-phone"></a>
+            <a href="mailto:danielnicholas1477@gmail.com?subject=FROM MY WEBSITE" target="_blank" class="fa fa-envelope"></a>   
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i>by Daniel Nicholas</p>
+</section>
+
+
+
+
+<!-- Javascript for toggle menu -->
+  <script>
+      var nav_link = document.getElementById("nav_link")
+      
+      function show_menu(){
+          nav_link.style.right = "0"; 
+      }
+
+      function hide_menu(){
+          nav_link.style.right = "-200px";
+      }
+  </script>  
+</body>
+</html>
